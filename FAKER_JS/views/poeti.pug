@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 POETI
+  ul
+    each p in poeti
+      li
+        a(href=`/poeti/poeta/${p.email}`) #{p.name}
